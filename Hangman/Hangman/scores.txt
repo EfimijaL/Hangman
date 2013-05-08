@@ -1,0 +1,10 @@
+reks	3270
+reks	2160
+reks	1060
+Reks	525
+davor	495
+test	435
+davor	290
+test2	284
+reks	162
+reks	121
