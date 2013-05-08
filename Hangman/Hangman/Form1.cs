@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Hangman
 {
@@ -23,6 +24,8 @@ namespace Hangman
         {
             InitializeComponent();
             score = new Scores();
+          /*  SoundPlayer player = new SoundPlayer(@"C:\WINDOWS\Media\ding.wav");
+            player.PlayLooping();*/
         }
 
         private void Start_Game(object sender, EventArgs e)

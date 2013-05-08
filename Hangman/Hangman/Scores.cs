@@ -62,7 +62,7 @@ namespace Hangman
                     Results.Insert(Results.Count, string.Format("{0}\t{1}", name, sc));
             }
             if (Results.Count > 10)
-                Results.RemoveAt(11);
+                Results.RemoveAt(10);
             updateLowest();
             Refresh();
         }
