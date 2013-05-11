@@ -13,14 +13,18 @@ namespace Hangman
         public Scores() {
             StreamReader file;
             Results = new List<string>();
-            string path =@"../../scores.txt";
+            string path = @"../../Resources/scores.txt";
             if (File.Exists(path))
             {
                 file = new StreamReader(path);
                 string lines;
                 while ((lines = file.ReadLine()) != null)
                 {
-                    Results.Add(lines);
+
+                    string[] parts = lines.Split('\t');
+                    parts[0] = Coding.DecryptString(parts[0]);
+                    parts[1] = Coding.DecryptString(parts[1]);
+                    Results.Add(parts[0]+"\t"+parts[1]);
                 }
                 file.Close();
             }
@@ -69,24 +73,33 @@ namespace Hangman
 
         public void Refresh() {
             StreamWriter file;
-            string path = @"../../scores.txt";
+            string path = @"../../Resources/scores.txt";
             if (File.Exists(path))
             {
                 file = new StreamWriter(path);
                 for (int i = 0; i < Results.Count; i++)
-                    file.WriteLine(Results[i]);
+                {
+                    string[] s = Results[i].Split('\t');
+                    s[0] = Coding.EncryptString(s[0]);
+                    s[1] = Coding.EncryptString(s[1]);
+                    file.WriteLine(s[0]+"\t"+s[1]);
+                }
                 file.Close();
             }
         }
 
         public string ListofPlayers()
         {
-            StringBuilder sb = new StringBuilder();
-            int i = 0;
-            for (i = 0; i < Results.Count-1; i++)
-                sb.Append(string.Format("{0}\t {1}\n",(i+1),Results[i]));
-            sb.Append(string.Format("{0}\t {1}", (i + 1), Results[i]));
-            return sb.ToString();
+            if (Results.Count > 0)
+            {
+                StringBuilder sb = new StringBuilder();
+                int i = 0;
+                for (i = 0; i < Results.Count - 1; i++)
+                    sb.Append(string.Format("{0}\t {1}\n", (i + 1), Results[i]));
+                sb.Append(string.Format("{0}\t {1}", (i + 1), Results[i]));
+                return sb.ToString();
+            }
+            return "";
         }
     }
 }

@@ -19,13 +19,16 @@ namespace Hangman
         private static readonly int TIME = 120;
         private int timeElapsed;
         private Scores score;
+        private bool Sound { get; set; }
+        private SoundPlayer player;
 
         public Form1()
         {
             InitializeComponent();
             score = new Scores();
-          /*  SoundPlayer player = new SoundPlayer(@"C:\WINDOWS\Media\ding.wav");
-            player.PlayLooping();*/
+            player = new SoundPlayer(@"../../Resources/Blaues Licht - Afterworld.wav");
+            player.PlayLooping();
+            Sound = true;
         }
 
         private void Start_Game(object sender, EventArgs e)
@@ -44,7 +47,6 @@ namespace Hangman
         private void Scores(object sender, EventArgs e)
         {
             tabControl.SelectedTab = tabScore;
-            //tbScores.Text = score.ListofPlayers();
             rtb.Text = score.ListofPlayers();
         }
 
@@ -57,6 +59,7 @@ namespace Hangman
         {
             Button btn = (Button)sender;
             btn.Enabled = false;
+            btn.FlatStyle = FlatStyle.Popup;
             enterLetter( btn.Text[0]);        
         }
 
@@ -65,9 +68,6 @@ namespace Hangman
                 btn.Enabled = true;
         }
 
-
-
-
         private void newGame()
         {
             ResetLetters();
@@ -75,17 +75,14 @@ namespace Hangman
             dataWords = new Data(level);
             int index = r.Next(dataWords.Words.Count);
             hangmanWord = new HangmanWord(dataWords.Words[index]);
-            label1.Text = Application.StartupPath;
-            updateWordMask();    
+            updateWordMask();  
             timeElapsed = 0;
             timer1.Start();
             pgbLife.Maximum = TIME;
-            pgbLife.Value = TIME;          
-            picuterBox.Load("../../pictures/Gallows0.jpg");
+            pgbLife.Value = TIME;
+            picuterBox.Load("../../Resources/pictures/Gallows0.jpg");
         }
-        /// <summary>
-        /// Метод за обновување на содржината на скриениот збор.
-        /// </summary>
+
         private void updateWordMask()
         {
             lblword.Text = hangmanWord.WordMask();
@@ -99,7 +96,7 @@ namespace Hangman
                 {
                     updateWordMask();                
                 }
-                picuterBox.Load(string.Format("../../pictures/Gallows{0}.jpg", hangmanWord.WrongCount));
+                picuterBox.Load(string.Format("../../Resources/pictures/Gallows{0}.jpg", hangmanWord.WrongCount));
                 checkGameState();
         }
         
@@ -155,7 +152,10 @@ namespace Hangman
 
         private void buttons_Disabled() {
             foreach (Button btn in flowPanelButtons.Controls)
+            {
                 btn.Enabled = false;
+                btn.FlatStyle = FlatStyle.Standard;
+            }
         }
 
         private void gameResult() {
@@ -206,6 +206,27 @@ namespace Hangman
         {
             this.Close();
         }
+
+        private void changeVoulmen(object sender, EventArgs e)
+        {
+            Sound = !Sound;
+            if (Sound)
+            {
+                player.PlayLooping();
+                pbSound1.Load("../../Resources/pictures/soundOn.png");
+                pbSound2.Load("../../Resources/pictures/soundOn.png");
+                pbSound3.Load("../../Resources/pictures/soundOn.png");
+                pbSound4.Load("../../Resources/pictures/soundOn.png");
+            }
+            else {
+                player.Stop();
+                pbSound1.Load("../../Resources/pictures/soundOff.png");
+                pbSound2.Load("../../Resources/pictures/soundOff.png");
+                pbSound3.Load("../../Resources/pictures/soundOff.png");
+                pbSound4.Load("../../Resources/pictures/soundOff.png");
+            }
+        }
+
 
 
     }

@@ -13,7 +13,7 @@ namespace Hangman
         public Data(String level) {
             Words = new List<string>();
             StreamReader file;
-            string path = @"../../words.txt";
+            string path = @"../../Resources/words.txt";
             if (File.Exists(path))
             {
                 file = new StreamReader(path);
@@ -21,6 +21,7 @@ namespace Hangman
                 bool flag = false;
                 while ((lines = file.ReadLine()) != null)
                 {
+                    lines = Coding.DecryptString(lines.TrimEnd('\n','\r'));
                     if (lines.StartsWith("*") && lines.EndsWith("*"))
                     {
                         if (lines.ToLower().Equals(string.Format("*{0}*", level.ToLower())))
