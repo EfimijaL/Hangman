@@ -25,10 +25,5 @@ namespace Hangman
             DialogResult = DialogResult.Yes;
             this.Close();
         }
-
-       private void label3_Click(object sender, EventArgs e)
-        {
-
-        } 
     }
 }
