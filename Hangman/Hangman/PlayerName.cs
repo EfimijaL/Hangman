@@ -16,6 +16,7 @@ namespace Hangman
         public PlayerName()
         {
             InitializeComponent();
+            lblScore.Text = Form1.currentScore;
         }
 
         private void btSubmit_Click(object sender, EventArgs e)
@@ -24,5 +25,10 @@ namespace Hangman
             DialogResult = DialogResult.Yes;
             this.Close();
         }
+
+       private void label3_Click(object sender, EventArgs e)
+        {
+
+        } 
     }
 }

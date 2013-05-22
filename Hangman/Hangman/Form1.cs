@@ -21,7 +21,7 @@ namespace Hangman
         private Scores score;
         private bool Sound { get; set; }
         private SoundPlayer player;
-
+        public static string currentScore { get; set; }
         public Form1()
         {
             InitializeComponent();
@@ -180,6 +180,7 @@ namespace Hangman
             }
             if (totalScore > lowest)
             {
+                currentScore = totalScore.ToString();
                 PlayerName pl = new PlayerName();
                 if ((pl.ShowDialog()) == DialogResult.Yes)
                 {
