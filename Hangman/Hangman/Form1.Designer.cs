@@ -79,6 +79,7 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.tabHelp = new System.Windows.Forms.TabPage();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pbSound3 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.tabScore = new System.Windows.Forms.TabPage();
@@ -88,7 +89,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabControl.SuspendLayout();
             this.tabMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSound1)).BeginInit();
@@ -279,10 +279,10 @@
             this.tabGame.Controls.Add(this.flowPanelButtons);
             this.tabGame.Controls.Add(this.btnReset);
             this.tabGame.Controls.Add(this.button8);
-            this.tabGame.Location = new System.Drawing.Point(4, 22);
+            this.tabGame.Location = new System.Drawing.Point(4, 5);
             this.tabGame.Name = "tabGame";
             this.tabGame.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGame.Size = new System.Drawing.Size(691, 421);
+            this.tabGame.Size = new System.Drawing.Size(691, 438);
             this.tabGame.TabIndex = 1;
             this.tabGame.Text = "Game";
             // 
@@ -674,12 +674,21 @@
             this.tabHelp.Controls.Add(this.richTextBox1);
             this.tabHelp.Controls.Add(this.pbSound3);
             this.tabHelp.Controls.Add(this.button7);
-            this.tabHelp.Location = new System.Drawing.Point(4, 22);
+            this.tabHelp.Location = new System.Drawing.Point(4, 5);
             this.tabHelp.Name = "tabHelp";
             this.tabHelp.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHelp.Size = new System.Drawing.Size(691, 421);
+            this.tabHelp.Size = new System.Drawing.Size(691, 438);
             this.tabHelp.TabIndex = 2;
             this.tabHelp.Text = "Help";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe Script", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.Location = new System.Drawing.Point(27, 50);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(609, 293);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // pbSound3
             // 
@@ -711,10 +720,10 @@
             this.tabScore.Controls.Add(this.btnPlay);
             this.tabScore.Controls.Add(this.label2);
             this.tabScore.Controls.Add(this.button6);
-            this.tabScore.Location = new System.Drawing.Point(4, 22);
+            this.tabScore.Location = new System.Drawing.Point(4, 5);
             this.tabScore.Name = "tabScore";
             this.tabScore.Padding = new System.Windows.Forms.Padding(3);
-            this.tabScore.Size = new System.Drawing.Size(691, 421);
+            this.tabScore.Size = new System.Drawing.Size(691, 438);
             this.tabScore.TabIndex = 3;
             this.tabScore.Text = "Scores";
             // 
@@ -781,21 +790,14 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Font = new System.Drawing.Font("Segoe Script", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(27, 50);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(609, 293);
-            this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 441);
             this.Controls.Add(this.tabControl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Hangman";
             this.tabControl.ResumeLayout(false);

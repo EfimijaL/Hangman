@@ -7,36 +7,12 @@ namespace Hangman
 {
     class HangmanWord
     {
-        /// <summary>
-        /// Зборот што се погодува.
-        /// </summary>
         public string Word { get; set; }
-
-        /// <summary>
-        /// Сите букви кои се внесени за да се погоди зборот.
-        /// </summary>
         public HashSet<char> AllLetters { get; set; }
-
-        /// <summary>
-        /// Буквите од кои е составен зборот.
-        /// </summary>
         public HashSet<char> WordLetters { get; set; }
-
-        /// <summary>
-        /// Број на неуспешни обиди.
-        /// </summary>
         public int WrongCount { get; set; }
-
-        /// <summary>
-        /// Максимален број на неуспешни обиди
-        /// </summary>
         public static readonly int MAX_WRONG_COUNT = 7;
 
-        /// <summary>
-        /// Конструктор на нова игра. Го иницијализира зборот и соодветните структури
-        /// и ја пополнува структурата со сите букви од кои е составен зборот.
-        /// </summary>
-        /// <param name="word">Зборот кој треба да се погодува.</param>
         public HangmanWord(string word)
         {
             Word = word;
@@ -49,10 +25,7 @@ namespace Hangman
             AllLetters = new HashSet<char>();
             WrongCount = 0;
         }
-        /// <summary>
-        /// Дали зборот е погоден. При секое погодување на буква од зборот истата се исрфла од
-        /// множеството со букви од кои е составен зборот.
-        /// </summary>
+
         public bool IsGuessed
         {
             get
@@ -60,10 +33,7 @@ namespace Hangman
                 return WordLetters.Count == 0;
             }
         }
-        /// <summary>
-        /// Дали е крај на играта, односно дали бројот на неуспешни обиди го достигнал
-        /// максималниот број на неуспешни обиди.
-        /// </summary>
+
         public bool IsGameOver
         {
             get
@@ -72,11 +42,6 @@ namespace Hangman
             }
         }
 
-        /// <summary>
-        /// Се повикува кога се обидуваме да погодиме буква од зборот.
-        /// </summary>
-        /// <param name="letter">Буквата која ја погодуваме.</param>
-        /// <returns>Дали буквата е претходно искористена.</returns>
         public bool GuessLetter(char letter)
         {
             if (AllLetters.Contains(letter))
@@ -94,11 +59,7 @@ namespace Hangman
             }
             return true;
         }
-        /// <summary>
-        /// Стринг за приказ на зборот. Секоја не погодена буква се заменува со "_" и
-        /// се додава празно место помеѓу буквите.
-        /// </summary>
-        /// <returns>Стрингот за приказ.</returns>
+
         public string WordMask()
         {
             StringBuilder guess = new StringBuilder();
@@ -119,10 +80,7 @@ namespace Hangman
             }
             return guess.ToString();
         }
-        /// <summary>
-        /// Стринг со сите букви кои се искористени.
-        /// </summary>
-        /// <returns>Стрингот за приказ.</returns>
+        
         public string GuessedLettersMask()
         {
             StringBuilder res = new StringBuilder();

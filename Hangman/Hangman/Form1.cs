@@ -26,6 +26,7 @@ namespace Hangman
         {
             InitializeComponent();
             score = new Scores();
+            dataWords = new Data();
             player = new SoundPlayer(@"../../Resources/Blaues Licht - Afterworld.wav");
             player.PlayLooping();
             Sound = true;
@@ -72,9 +73,9 @@ namespace Hangman
         {
             ResetLetters();
             Random r = new Random();
-            dataWords = new Data(level);
-            int index = r.Next(dataWords.Words.Count);
-            hangmanWord = new HangmanWord(dataWords.Words[index]);
+            
+            int index = r.Next(dataWords.getWords(level).Count);
+            hangmanWord = new HangmanWord(dataWords.getWords(level)[index]);
             updateWordMask();  
             timeElapsed = 0;
             timer1.Start();
@@ -122,8 +123,8 @@ namespace Hangman
                 updateWordMask();
                 timer1.Stop();
                 buttons_Disabled();
-                gameResult();
-
+               // gameResult();
+                startNewGame("Better luck next time!");
             }
             else
             {
@@ -138,7 +139,7 @@ namespace Hangman
 
         public void startNewGame(string caption)
         {
-            if (MessageBox.Show("Нова игра?", caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show(caption, "New game?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                 newGame();
             }
@@ -192,7 +193,7 @@ namespace Hangman
 
             }
             else {
-                startNewGame("Your score is too low for top 10 scores");
+                startNewGame("Your score is too lower!!");
             }
         }
 

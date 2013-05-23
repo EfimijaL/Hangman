@@ -95,6 +95,9 @@
             this.Controls.Add(this.btSubmit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbPlayer);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Location = new System.Drawing.Point(250, 250);
+            this.MaximizeBox = false;
             this.Name = "PlayerName";
             this.Text = "Player Name";
             this.ResumeLayout(false);
