@@ -48,7 +48,6 @@
             this.pbSound2 = new System.Windows.Forms.PictureBox();
             this.picuterBox = new System.Windows.Forms.PictureBox();
             this.pgbLife = new System.Windows.Forms.ProgressBar();
-            this.lblword = new System.Windows.Forms.Label();
             this.flowPanelButtons = new System.Windows.Forms.FlowLayoutPanel();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
@@ -89,6 +88,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblword = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSound1)).BeginInit();
@@ -115,7 +115,7 @@
             this.tabControl.Location = new System.Drawing.Point(-3, -3);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(699, 447);
+            this.tabControl.Size = new System.Drawing.Size(717, 447);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl.TabIndex = 0;
             // 
@@ -132,10 +132,11 @@
             this.tabMenu.Controls.Add(this.button5);
             this.tabMenu.Controls.Add(this.flowPanelChoose);
             this.tabMenu.Controls.Add(this.button4);
-            this.tabMenu.Location = new System.Drawing.Point(4, 5);
+            this.tabMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabMenu.Location = new System.Drawing.Point(4, 20);
             this.tabMenu.Name = "tabMenu";
             this.tabMenu.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMenu.Size = new System.Drawing.Size(691, 438);
+            this.tabMenu.Size = new System.Drawing.Size(691, 423);
             this.tabMenu.TabIndex = 0;
             this.tabMenu.Text = "Menu";
             // 
@@ -272,17 +273,17 @@
             // 
             this.tabGame.BackColor = System.Drawing.Color.Transparent;
             this.tabGame.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabGame.BackgroundImage")));
+            this.tabGame.Controls.Add(this.lblword);
             this.tabGame.Controls.Add(this.pbSound2);
             this.tabGame.Controls.Add(this.picuterBox);
             this.tabGame.Controls.Add(this.pgbLife);
-            this.tabGame.Controls.Add(this.lblword);
             this.tabGame.Controls.Add(this.flowPanelButtons);
             this.tabGame.Controls.Add(this.btnReset);
             this.tabGame.Controls.Add(this.button8);
             this.tabGame.Location = new System.Drawing.Point(4, 5);
             this.tabGame.Name = "tabGame";
             this.tabGame.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGame.Size = new System.Drawing.Size(691, 438);
+            this.tabGame.Size = new System.Drawing.Size(709, 438);
             this.tabGame.TabIndex = 1;
             this.tabGame.Text = "Game";
             // 
@@ -314,17 +315,6 @@
             this.pgbLife.Step = 1;
             this.pgbLife.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pgbLife.TabIndex = 6;
-            // 
-            // lblword
-            // 
-            this.lblword.AutoSize = true;
-            this.lblword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblword.Location = new System.Drawing.Point(350, 56);
-            this.lblword.Name = "lblword";
-            this.lblword.Size = new System.Drawing.Size(70, 25);
-            this.lblword.TabIndex = 5;
-            this.lblword.Text = "label1";
             // 
             // flowPanelButtons
             // 
@@ -674,10 +664,10 @@
             this.tabHelp.Controls.Add(this.richTextBox1);
             this.tabHelp.Controls.Add(this.pbSound3);
             this.tabHelp.Controls.Add(this.button7);
-            this.tabHelp.Location = new System.Drawing.Point(4, 5);
+            this.tabHelp.Location = new System.Drawing.Point(4, 20);
             this.tabHelp.Name = "tabHelp";
             this.tabHelp.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHelp.Size = new System.Drawing.Size(691, 438);
+            this.tabHelp.Size = new System.Drawing.Size(691, 423);
             this.tabHelp.TabIndex = 2;
             this.tabHelp.Text = "Help";
             // 
@@ -720,10 +710,10 @@
             this.tabScore.Controls.Add(this.btnPlay);
             this.tabScore.Controls.Add(this.label2);
             this.tabScore.Controls.Add(this.button6);
-            this.tabScore.Location = new System.Drawing.Point(4, 5);
+            this.tabScore.Location = new System.Drawing.Point(4, 20);
             this.tabScore.Name = "tabScore";
             this.tabScore.Padding = new System.Windows.Forms.Padding(3);
-            this.tabScore.Size = new System.Drawing.Size(691, 438);
+            this.tabScore.Size = new System.Drawing.Size(691, 423);
             this.tabScore.TabIndex = 3;
             this.tabScore.Text = "Scores";
             // 
@@ -790,11 +780,22 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lblword
+            // 
+            this.lblword.AutoSize = true;
+            this.lblword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblword.ForeColor = System.Drawing.Color.Transparent;
+            this.lblword.Location = new System.Drawing.Point(317, 68);
+            this.lblword.Name = "lblword";
+            this.lblword.Size = new System.Drawing.Size(57, 20);
+            this.lblword.TabIndex = 10;
+            this.lblword.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(692, 441);
+            this.ClientSize = new System.Drawing.Size(711, 441);
             this.Controls.Add(this.tabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -864,7 +865,6 @@
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Button button49;
-        private System.Windows.Forms.Label lblword;
         private System.Windows.Forms.ProgressBar pgbLife;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox picuterBox;
@@ -881,6 +881,7 @@
         private System.Windows.Forms.PictureBox pbSound3;
         private System.Windows.Forms.PictureBox pbSound4;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label lblword;
     }
 }
 

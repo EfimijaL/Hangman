@@ -6204,41 +6204,6 @@
         8I3rl94vudUgtvt1teb7Z7KyiV99vJIgy8MgwSG+XOMEElfuXD1KdPLqMKiaaWqas18jQ//Z
 </value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Hangman is game where the player is guess a word, phrase or sentence by suggesting letters and they are separated in three groups or levels.
-
-Easy level - contains words, phrases or sentences which are from general knowledge
-
-Normal level - contains words, phrases or sentences which are names of animals
-
-Hard level - contains word, phares or sentences which are names of captial city or country</value>
-  </data>
-  <data name="pbSound3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAABK5JREFUSEvN
-        VWlMXFUUPjQ2xsZYahujtn/EpDapiUbDEraRJYGEYksAabEEq2AABSKRWpYZSgUpS4JsYQkgyzBAgIDs
-        FKUVCEvImJkyBIWOygBTcIQMSIBBOMd7Xx8oUBtM/eGXnLx373u559zznfMd+F/AysrqeWtr63h3d/cE
-        b2/vBB8fn6vs+ZT4+fFga2trzg5XRkZGGmpra6m9vR3z8vLI19fXUfxFQJMRjpfOwpPi8mBwdHQ84uDg
-        0BsRETHV1dWFc3NzuLi4iPX19ejv7y8RfxPQsgSfFP4K+ngd+Itbj4aTk9NhZ2fn1sLCwpXOzk5UKpW0
-        ublJW1tb2NjYSIGBgbsccGTPgcfVX0Dv/wNIxa2Hw9XV1YzlW15aWorLy8s4MzND6+vrtLa2RiaTCZub
-        myk4OHifA46wSTjtMw4GexV4ilv74enpmZ2Tk4McPGKj0YjT09O4tLSEKysr2NraimFhYTsOFAsQd2Ma
-        QsQleGjg8ptKmLS4A08IG52xZhbd8SDtS4SE5JDXylNTU/nBxMEj1mg0NDAwQLOzs2QwGJARTYz0HQdf
-        /QZW16bg/vkxuMLX1m1w6HUl3Ds5AB7CD1WfHpf91J+Fxp9v0/TEsHAoz/fGxgYtLCwIBzJiSaVS0cTE
-        BHZ0dNA12Ue7UhRyD5xc7sLiK8NwlK/PjsDN5/ohH64nyLQpEQ44N9HN8rHCkmLC1dVV1Ol0ODk5ycnF
-        4uJiLCgowO7ubhwaGuIOMaXIT5I7DwpG6BnBA4OjCvpZ1MItTg/D28/2wQikpaWRPPND0o1k4B+GZjIZ
-        NcRzzqPk1tDQgElJSZScnEwKhULog5aWFkrJ/0CSqocv31KD9oVbD3Jt/T0knOiHIv7+0m04e6wPDBAb
-        G4upMX44WmaFhhZ7nB5MR56G/Px8wTIzMzE8PByjoqIwKysL5XI5NjU1Mac3JBfvwCFWLQtHe+FVfugb
-        SnifRd3K30/WwinzPjABqwaKuOJOypynca4SaPTrQOJNlZGRQdxY5MhKkpNK2dnZVFFRgexWlJR8XRIw
-        8AgHdaKDgIAAunRBQncVz+DvPUDqdj+qrKzk0RM38QYklUqppqaGeInW1dXRzYL3JGliil7s2J8ii+/E
-        FDFN0Xqdc6HxzmO4NQ6k+tZLiJIZfxLrZIyOjqb09HTq6enh5cqlgr4ovCiQfPnH3SSfEklm1fSAZA5f
-        7/OytvKXUXPrBLbXvsMjFPSGG78Nix6LiopwbGxM4IcT/1lc+K4yDRXL9MzgnjLlYNJrwUzKZJjLcQWL
-        WKj9v1dRdXU1zc/PC43GSN7VaGVio10QG822e0+j7QWXCplMRr29vdyJQDh3wDtZr9cLHISGhu44qGJS
-        8fnMX1JxblsqvhGlYi+Ykpq5ubnJWY8gc4K5ubnIekBoPK1WK5RqUFDQrhRt42PtAcSOQyKRHHZxcWlj
-        pYklJSXEDiW1Wk2jo6O8sx8q1zkHlett2NvbH2FDpy8xMZHKyspocHCQuFQwpaV/GDj3pTp4V9w6GGxs
-        bMzt7OzUMTExWF5eLqSHV9XekVk1BcdzNP9yZG7D0tKSD/04xsvO0Pfy8vpvhv7jAeBPx84cQt6aIowA
-        AAAASUVORK5CYII=
-</value>
-  </data>
   <data name="tabScore.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD/2wBD
@@ -7922,6 +7887,41 @@ Hard level - contains word, phares or sentences which are names of captial city 
         9vPC/wAN/D//AAkmuWOnvqk9t9utrPZbJJHEz77iSNDh5oxgEt82cYBI92/4cO/tXf8ARK//AC5tH/8A
         kuu2hluLrR56NKUl3UW196QH6Nf8GxP/ACYT4u/7H+8/9N2m0V6N/wAEJ/2SviD+xr+yP4i8L/Ejw/8A
         8I3rl94vudUgtvt1teb7Z7KyiV99vJIgy8MgwSG+XOMEElfuXD1KdPLqMKiaaWqas18jQ//Z
+</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Hangman is game where the player is guess a word, phrase or sentence by suggesting letters and they are separated in three groups or levels.
+
+Easy level - contains words, phrases or sentences which are from general knowledge
+
+Normal level - contains words, phrases or sentences which are names of animals
+
+Hard level - contains word, phares or sentences which are names of captial city or country</value>
+  </data>
+  <data name="pbSound3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAABK5JREFUSEvN
+        VWlMXFUUPjQ2xsZYahujtn/EpDapiUbDEraRJYGEYksAabEEq2AABSKRWpYZSgUpS4JsYQkgyzBAgIDs
+        FKUVCEvImJkyBIWOygBTcIQMSIBBOMd7Xx8oUBtM/eGXnLx373u559zznfMd+F/AysrqeWtr63h3d/cE
+        b2/vBB8fn6vs+ZT4+fFga2trzg5XRkZGGmpra6m9vR3z8vLI19fXUfxFQJMRjpfOwpPi8mBwdHQ84uDg
+        0BsRETHV1dWFc3NzuLi4iPX19ejv7y8RfxPQsgSfFP4K+ngd+Itbj4aTk9NhZ2fn1sLCwpXOzk5UKpW0
+        ublJW1tb2NjYSIGBgbsccGTPgcfVX0Dv/wNIxa2Hw9XV1YzlW15aWorLy8s4MzND6+vrtLa2RiaTCZub
+        myk4OHifA46wSTjtMw4GexV4ilv74enpmZ2Tk4McPGKj0YjT09O4tLSEKysr2NraimFhYTsOFAsQd2Ma
+        QsQleGjg8ptKmLS4A08IG52xZhbd8SDtS4SE5JDXylNTU/nBxMEj1mg0NDAwQLOzs2QwGJARTYz0HQdf
+        /QZW16bg/vkxuMLX1m1w6HUl3Ds5AB7CD1WfHpf91J+Fxp9v0/TEsHAoz/fGxgYtLCwIBzJiSaVS0cTE
+        BHZ0dNA12Ue7UhRyD5xc7sLiK8NwlK/PjsDN5/ohH64nyLQpEQ44N9HN8rHCkmLC1dVV1Ol0ODk5ycnF
+        4uJiLCgowO7ubhwaGuIOMaXIT5I7DwpG6BnBA4OjCvpZ1MItTg/D28/2wQikpaWRPPND0o1k4B+GZjIZ
+        NcRzzqPk1tDQgElJSZScnEwKhULog5aWFkrJ/0CSqocv31KD9oVbD3Jt/T0knOiHIv7+0m04e6wPDBAb
+        G4upMX44WmaFhhZ7nB5MR56G/Px8wTIzMzE8PByjoqIwKysL5XI5NjU1Mac3JBfvwCFWLQtHe+FVfugb
+        SnifRd3K30/WwinzPjABqwaKuOJOypynca4SaPTrQOJNlZGRQdxY5MhKkpNK2dnZVFFRgexWlJR8XRIw
+        8AgHdaKDgIAAunRBQncVz+DvPUDqdj+qrKzk0RM38QYklUqppqaGeInW1dXRzYL3JGliil7s2J8ii+/E
+        FDFN0Xqdc6HxzmO4NQ6k+tZLiJIZfxLrZIyOjqb09HTq6enh5cqlgr4ovCiQfPnH3SSfEklm1fSAZA5f
+        7/OytvKXUXPrBLbXvsMjFPSGG78Nix6LiopwbGxM4IcT/1lc+K4yDRXL9MzgnjLlYNJrwUzKZJjLcQWL
+        WKj9v1dRdXU1zc/PC43GSN7VaGVio10QG822e0+j7QWXCplMRr29vdyJQDh3wDtZr9cLHISGhu44qGJS
+        8fnMX1JxblsqvhGlYi+Ykpq5ubnJWY8gc4K5ubnIekBoPK1WK5RqUFDQrhRt42PtAcSOQyKRHHZxcWlj
+        pYklJSXEDiW1Wk2jo6O8sx8q1zkHlett2NvbH2FDpy8xMZHKyspocHCQuFQwpaV/GDj3pTp4V9w6GGxs
+        bMzt7OzUMTExWF5eLqSHV9XekVk1BcdzNP9yZG7D0tKSD/04xsvO0Pfy8vpvhv7jAeBPx84cQt6aIowA
+        AAAASUVORK5CYII=
 </value>
   </data>
   <data name="pbSound4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
